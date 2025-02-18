@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <nav class="nav-icons">
+            <a href="#">🔔 Notifications</a>
+            <a href="#">❓ Help</a>
+            <a href="#">👤 Profile</a>
+        </nav>
+        <div class="menu-icon">☰</div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <h1>Welcome to My GitHub Website</h1>
+        <p>This is a simple example hosted on GitHub Pages.</p>
+        <button class="hero-button">Get Started</button>
+    </section>
+
+    <footer>
+        <p>© 2025 My GitHub Website. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-icons a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1, .hero p {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-button {
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+document.querySelector(".menu-icon").addEventListener("click", () => {
+    alert("Menu clicked!");
+});
